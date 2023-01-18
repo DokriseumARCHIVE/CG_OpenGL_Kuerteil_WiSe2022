@@ -212,7 +212,7 @@ void zeichneSegment(float h)
     Model = Save;
 }
 // Einstiegspunkt für C- und C++-Programme (Funktion), Konsolenprogramme könnte hier auch Parameter erwarten
-int main(void)
+int mains(void)
 {
 	// Initialisierung der GLFW-Bibliothek
 	if (!glfwInit())
@@ -250,7 +250,6 @@ int main(void)
 	// die Malbefehle selbst weniger Parameter benötigen.
 	// Erst danach darf man dann OpenGL-Befehle aufrufen!
     glfwMakeContextCurrent(window);
-
 	// Initialisiere GLEW
 	// (GLEW ermöglicht Zugriff auf OpenGL-API > 1.1)
 	glewExperimental = true; // Diese Zeile ist leider notwendig.

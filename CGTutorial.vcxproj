@@ -314,19 +314,27 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Applikation.cpp" />
     <ClCompile Include="CGTutorial.cpp" />
     <ClCompile Include="objects.cpp" />
     <ClCompile Include="objloader.cpp" />
     <ClCompile Include="shader.cpp" />
+    <ClCompile Include="Start.cpp" />
     <ClCompile Include="texture.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">external\glfw-3.1.2\include;external\glew-1.13.0;external\glm-0.9.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="Univerumskoerper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Applikation.h" />
     <ClInclude Include="objects.hpp" />
     <ClInclude Include="objloader.hpp" />
     <ClInclude Include="shader.hpp" />
     <ClInclude Include="texture.hpp" />
+    <ClInclude Include="Universumskoerper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\Dustin\Documents\Kugel.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
